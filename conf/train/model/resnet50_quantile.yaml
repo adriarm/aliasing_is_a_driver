@@ -1,0 +1,51 @@
+arch: resnet50
+
+# Initial Blur
+initial_blur: 0
+
+# Layer0
+conv1:
+  antialiasing: True
+relu:
+  L: 2
+  U: 2
+  q: 0.4
+maxpool:
+  pre_blur: True
+  post_blur: True
+
+# Layer1
+layer1:
+  conv:
+    antialiasing: False
+  relu:
+    L: 1
+    U: 1
+    q: 0.4
+
+# Layer2
+layer2:
+  conv:
+    antialiasing: False
+  relu:
+    L: 1
+    U: 1
+    q: 0.4
+
+# Layer3
+layer3:
+  conv:
+    antialiasing: False
+  relu:
+    L: 1
+    U: 1
+    q: 0.4
+
+# Layer4
+layer4:
+  conv:
+    antialiasing: False
+  relu:
+    L: 1
+    U: 1
+    q: 0.4

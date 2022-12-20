@@ -1,0 +1,10 @@
+*.pyc
+*.log
+*.out
+datasets/
+outputs/
+multirun/
+results/
+slurm_logs/
+visualizations/
+datasets

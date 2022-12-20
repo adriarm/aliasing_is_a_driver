@@ -1,0 +1,13 @@
+max_epochs: 93
+grad_acum: 1
+
+train_loader:
+  batch_size: 32
+  num_workers: 1
+
+valid_loader:
+  batch_size: 32
+  num_workers: 1
+
+scheduler:
+  pct_start: 0.1075268817204

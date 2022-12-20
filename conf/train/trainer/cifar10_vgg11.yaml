@@ -1,0 +1,8 @@
+max_epochs: 30
+grad_acum: 1
+
+train_loader:
+  batch_size: 64
+
+valid_loader:
+  batch_size: 64

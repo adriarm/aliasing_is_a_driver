@@ -1,0 +1,37 @@
+defaults:
+  - dataset: cifar10
+  - model: vgg11_antialiased
+  - trainer: ${dataset}_${model}
+  - _self_
+
+save_best: True
+save_last: False
+test_fraction: 1.0
+seed: 42
+msg: '' # informational message
+
+world_size: -1 # number of nodes for distributed training
+ngpus_per_node: -1 # number of gpus per node
+rank: -1 # node rank for distributed training
+gpu: -1
+dist_url: 'env://' # url used to set up distributed training
+dist_backend: 'nccl' # distributed backend
+
+hydra:
+  job:
+    env_copy:
+      - HYDRA_NOW
+    config:
+      override_dirname:
+        exclude_keys:
+          - save_best
+          - save_last
+          - model
+          - seed
+          - dataset
+          - msg
+  run:
+    dir: outputs/train/${msg}/${hydra:runtime.choices.dataset}/${hydra:runtime.choices.model}/seed=${seed}/${hydra.job.override_dirname}/${oc.env:HYDRA_NOW}
+  sweep:
+    dir: multirun/train/${msg}/${hydra:runtime.choices.dataset}/${hydra:runtime.choices.model}/${oc.env:HYDRA_NOW}
+    subdir: ${hydra.job.override_dirname}/seed=${seed}

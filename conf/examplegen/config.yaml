@@ -1,0 +1,22 @@
+defaults:
+  - dataset: cifar10
+  - evaluator: ${dataset}
+  - _self_
+
+num_examples: 512
+
+seed: 42
+msg: '' # informational message
+
+choices: ${hydra:runtime.choices}
+hydra:
+  job:
+    env_copy:
+      - HYDRA_NOW
+    config:
+      override_dirname:
+        exclude_keys:
+          - dataset
+          - msg
+  run:
+    dir: outputs/examplegen/${msg}/${hydra:runtime.choices.dataset}/${hydra.job.override_dirname}/${oc.env:HYDRA_NOW}

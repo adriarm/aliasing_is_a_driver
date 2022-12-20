@@ -1,0 +1,64 @@
+arch: vgg11
+
+# Initial Blur
+initial_blur: 0
+
+# Block0
+block0:
+  conv:
+    antialiasing: True
+  relu:
+    L: 1
+    U: 1
+    q: -1
+  maxpool:
+    pre_blur: False
+    post_blur: True
+
+# Block1
+block1:
+  conv:
+    antialiasing: True
+  relu:
+    L: 1
+    U: 1
+    q: -1
+  maxpool:
+    pre_blur: False
+    post_blur: True
+
+# Block2
+block2:
+  conv:
+    antialiasing: True
+  relu:
+    L: 1
+    U: 1
+    q: -1
+  maxpool:
+    pre_blur: False
+    post_blur: True
+
+# Block3
+block3:
+  conv:
+    antialiasing: True
+  relu:
+    L: 1
+    U: 1
+    q: -1
+  maxpool:
+    pre_blur: False
+    post_blur: True
+
+# Block4
+block4:
+  conv:
+    antialiasing: True
+  relu:
+    L: 1
+    U: 1
+    q: -1
+  maxpool:
+    pre_blur: False
+    post_blur: True

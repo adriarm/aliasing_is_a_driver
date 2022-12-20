@@ -1,0 +1,40 @@
+arch: vit
+
+# Initial Blur
+initial_blur: 2
+
+# Group 1
+group1:
+  multihead_attention:
+    antialiasing: False
+  relu:
+    U: 1
+    L: 1
+    q: -1
+
+# Group 2
+group2:
+  multihead_attention:
+    antialiasing: False
+  relu:
+    U: 1
+    L: 1
+    q: -1
+
+# Group 3
+group3:
+  multihead_attention:
+    antialiasing: False
+  relu:
+    U: 1
+    L: 1
+    q: -1
+
+# Group 4
+group4:
+  multihead_attention:
+    antialiasing: False
+  relu:
+    U: 1
+    L: 1
+    q: -1
