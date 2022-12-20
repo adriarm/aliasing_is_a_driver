@@ -40,7 +40,7 @@ sbatch ./sh/train/tinyimagenet_vgg11.sh
 sbatch ./sh/train/tinyimagenet_resnet50.sh
 sbatch ./sh/train/typewise.sh
 ```
-If you want to use a different node/gpu configuration, you will need to change the resource request slurm commands in the .sh files, as well as the batch size used, accordingly. The per-gpu batch size for 8 GPUs is found in the corresponding config file in `conf/train/trainer`.
+If you want to use a different node/gpu configuration, you will need to change the resource request slurm commands in the .sh files, as well as the batch size used, accordingly. The default per-gpu batch size for 8 GPUs is found in the corresponding config file in `conf/train/trainer`.
 ```
 # Slurm resources options
 #SBATCH --nodes=8
@@ -50,7 +50,7 @@ If you want to use a different node/gpu configuration, you will need to change t
 .
 .
 .
-srun python3 launch_train.py ... +trainer.train_loader.batch_size=X +trainer.train_loader.valid_size=X
+srun python3 launch_train.py ... trainer.train_loader.batch_size=X trainer.train_loader.valid_size=X
 ```
 
 # Citation
