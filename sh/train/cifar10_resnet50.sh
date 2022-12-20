@@ -32,7 +32,7 @@ echo ""
 # Loading the required module
 source /etc/profile
 module load anaconda/2021b
-export PYTHONPATH=$PYTHONPATH:/home/gridsan/amunoz/projects/AntialiasedNetworks/src/robust_layers/antialiased/stylegan3
+export PYTHONPATH=$PYTHONPATH:$PWD/src/robust_layers/antialiased/stylegan3
 
 # Save datetime as variable
 hydra_now=$(date +"%Y-%m-%d_%H-%M-%S")
