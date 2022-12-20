@@ -1,4 +1,4 @@
-# Learning to See by Looking at Noise
+# Aliasing is a Driver of Adversarial Attacks
 
 This is the official implementation of Aliasing is a Driver of Adversarial Attacks.
 
