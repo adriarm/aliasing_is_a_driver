@@ -50,7 +50,7 @@ If you want to use a different node/gpu configuration, you will need to change t
 .
 .
 .
-srun python3 launch_train.py msg=$msg ... +trainer.train_loader.batch_size=X +trainer.train_loader.valid_size=X
+srun python3 launch_train.py ... +trainer.train_loader.batch_size=X +trainer.train_loader.valid_size=X
 ```
 
 # Citation
