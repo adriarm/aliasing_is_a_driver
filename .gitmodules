@@ -1,0 +1,3 @@
+[submodule "src/antialiased_layers/stylegan3"]
+	path = src/antialiased_layers/stylegan3
+	url = https://github.com/NVlabs/stylegan3
