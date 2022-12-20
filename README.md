@@ -12,6 +12,8 @@ In this work, we investigate the hypothesis that the existence of adversarial pe
 [[Paper](https://adriarm.github.io/_pages/aliasing_is_a_driver/files/paper.pdf)]
 [arXiv]
 
+We made heavy use of the fast up-sampling, down-sampling, and anti-aliased ReLu implementation of Stylegan3 [[Karras et al](https://github.com/NVlabs/stylegan3)].
+
 # Requirements
 
 To use our code run the following:
