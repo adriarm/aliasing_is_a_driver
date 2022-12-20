@@ -6,13 +6,11 @@ This is the official implementation of Aliasing is a Driver of Adversarial Attac
   <img width="100%" src="https://adriarm.github.io/_pages/aliasing_is_a_driver/files/toy_example_2.svg">
 </p>
 
-In this work, we investigate the hypothesis that the existence of adversarial perturbations is due in part to aliasing in neural networks.
+In this work, we investigate the hypothesis that the existence of adversarial perturbations is due in part to aliasing in neural networks. We made heavy use of the fast up-sampling, down-sampling, and anti-aliased ReLu implementations of Stylegan3 [[Karras et al](https://github.com/NVlabs/stylegan3)].
 
 [[Webpage](https://adriarm.github.io/_pages/aliasing_is_a_driver/)] 
 [[Paper](https://adriarm.github.io/_pages/aliasing_is_a_driver/files/paper.pdf)]
 [arXiv]
-
-We made heavy use of the fast up-sampling, down-sampling, and anti-aliased ReLu implementations of Stylegan3 [[Karras et al](https://github.com/NVlabs/stylegan3)].
 
 # Requirements
 
