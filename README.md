@@ -54,3 +54,16 @@ srun python3 launch_train.py ... trainer.train_loader.batch_size=X trainer.train
 ```
 
 # Citation
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;padding-right: 4em;width: 95%">
+<pre style="font-size: 10pt; margin: .3em 0px; text-align: left;">
+  @misc{rodriguezmunoz2022driver,
+    title = {Aliasing is a Driver of Adversarial Attacks},
+    author = {Rodríguez-Muñoz, Adrián and Torralba, Antonio},
+    year={2022},
+    eprint={2106.05963},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url = {https://arxiv.org/abs/2212.11760},
+  }
+</pre>
+</div>
